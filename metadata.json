@@ -1,0 +1,8 @@
+{
+  "name": "TheSaifBro - Portfolio",
+  "description": "The SaifBro Portfolio website is a personal website that showcases the work and achievements of SaifBro, a talented web developer and designer. The website features a clean and modern design, with a focus on showcasing SaifBro's portfolio of projects, skills, and experience. Visitors can explore SaifBro's work, learn more about his background and expertise, and get in touch with him for potential collaborations or job opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
