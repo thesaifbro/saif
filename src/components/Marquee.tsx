@@ -10,7 +10,7 @@ export function Marquee() {
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{
-            duration: 25,
+            duration: 40,
             ease: "linear",
             repeat: Infinity,
           }}
