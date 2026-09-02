@@ -25,7 +25,7 @@ export function Hero() {
       href: 'https://www.linkedin.com/in/thesaifbro/'
     },
     {
-      name: ' X',
+      name: 'X',
       icon: FaTwitter,
       href: 'https://x.com/thesaifbro'
     },
@@ -73,6 +73,7 @@ export function Hero() {
       className="relative min-h-[100dvh] flex flex-col justify-between overflow-hidden pt-24 sm:pt-28 pb-6 sm:pb-8 md:pb-10"
       id="home"
     >
+
       {/* Spacer */}
       <div className="h-2 sm:h-6" />
 
@@ -146,6 +147,8 @@ export function Hero() {
           onMouseEnter={() => setCursorVariant('link')}
           onMouseLeave={() => setCursorVariant('default')}
         >
+
+          {/* Profile Image */}
           <img
             src="https://files.catbox.moe/9c79u5.jpg"
             alt="Saif"
@@ -155,21 +158,25 @@ export function Hero() {
               h-full
               object-cover
 
-              grayscale
-              brightness-95
-              contrast-105
+              /* Desktop only grayscale */
+              md:grayscale
+              md:brightness-95
+              md:contrast-105
 
-              group-hover:grayscale-0
-              group-hover:brightness-100
-              group-hover:contrast-100
-              group-hover:scale-105
+              /* Desktop hover returns original color */
+              md:group-hover:grayscale-0
+              md:group-hover:brightness-100
+              md:group-hover:contrast-100
+              md:group-hover:scale-105
 
               transition-all
               duration-700
               ease-out
             "
           />
+
         </motion.div>
+
 
         {/* =========================
             NAME / TYPOGRAPHY
@@ -229,7 +236,9 @@ export function Hero() {
 
           </div>
         </div>
+
       </div>
+
 
       {/* =========================
           BOTTOM CONTENT
@@ -256,7 +265,14 @@ export function Hero() {
               delay: 3.5,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="flex items-center justify-start gap-4 lg:gap-5 pointer-events-auto"
+            className="
+              flex
+              items-center
+              justify-start
+              gap-4
+              lg:gap-5
+              pointer-events-auto
+            "
           >
             {leftSocials.map((item) => {
               const Icon = item.icon;
@@ -314,6 +330,7 @@ export function Hero() {
               );
             })}
           </motion.div>
+
 
           {/* CENTER SCROLL INDICATOR */}
           <motion.div
@@ -402,11 +419,9 @@ export function Hero() {
                   gap-1
 
                   text-[10px]
-
                   tracking-[0.25em]
 
                   font-mono
-
                   uppercase
 
                   text-[#858585]
@@ -441,6 +456,7 @@ export function Hero() {
             </div>
           </motion.div>
 
+
           {/* RIGHT SOCIALS */}
           <motion.div
             initial={{
@@ -456,7 +472,14 @@ export function Hero() {
               delay: 3.7,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="flex items-center justify-end gap-4 lg:gap-5 pointer-events-auto"
+            className="
+              flex
+              items-center
+              justify-end
+              gap-4
+              lg:gap-5
+              pointer-events-auto
+            "
           >
             {rightSocials.map((item) => {
               const Icon = item.icon;
@@ -517,12 +540,13 @@ export function Hero() {
 
         </div>
 
+
         {/* =========================
             MOBILE LAYOUT
         ========================== */}
         <div className="flex md:hidden flex-col items-center gap-3.5 w-full">
 
-          {/* MOBILE SOCIALS */}
+          {/* MOBILE SOCIAL ICONS */}
           <motion.div
             initial={{
               opacity: 0,
@@ -593,6 +617,7 @@ export function Hero() {
             })}
           </motion.div>
 
+
           {/* MOBILE SCROLL INDICATOR */}
           <motion.div
             initial={{
@@ -615,6 +640,7 @@ export function Hero() {
               justify-center
 
               pointer-events-auto
+
               cursor-pointer
 
               group
@@ -666,6 +692,7 @@ export function Hero() {
           </motion.div>
 
         </div>
+
       </div>
     </section>
   );
