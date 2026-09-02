@@ -15,8 +15,8 @@ export function Hero() {
 
   return (
     <section
-      id="home"
       className="relative min-h-[100dvh] flex flex-col justify-between overflow-hidden pt-24 sm:pt-28 pb-6 sm:pb-8 md:pb-10"
+      id="home"
     >
       {/* Top Heading */}
       <div className="relative z-10 flex justify-center px-4">
@@ -59,14 +59,13 @@ export function Hero() {
             rounded-full overflow-hidden
             pointer-events-auto
             border border-[#F5F5F0]/15
-            bg-transparent
+            bg-[#050505]
             mb-5 sm:mb-7 md:mb-10
             cursor-pointer
-            !shadow-none
-            md:!shadow-2xl
+            shadow-2xl
             transition-all duration-700
             hover:border-[#FF3333]/40
-            md:hover:!shadow-[0_0_60px_rgba(255,51,51,0.25)]
+            hover:shadow-[0_0_60px_rgba(255,51,51,0.25)]
           "
           onMouseEnter={() => setCursorVariant('link')}
           onMouseLeave={() => setCursorVariant('default')}
@@ -75,21 +74,18 @@ export function Hero() {
             src="https://files.catbox.moe/9c79u5.jpg"
             alt="Saif"
             draggable={false}
-            style={{
-              filter: 'none',
-              WebkitFilter: 'none',
-            }}
             className="
               block
               w-full
               h-full
               object-cover
 
-              !grayscale-0
-              !brightness-100
-              !contrast-100
-              !filter-none
+              /* MOBILE — original image */
+              max-md:grayscale-0
+              max-md:brightness-100
+              max-md:contrast-100
 
+              /* DESKTOP — keep existing effect */
               md:grayscale
               md:brightness-95
               md:contrast-105
@@ -99,8 +95,13 @@ export function Hero() {
               md:group-hover:contrast-100
               md:group-hover:scale-105
 
-              transition-all duration-700 ease-out
+              transition-all
+              duration-700
+              ease-out
             "
+            style={{
+              filter: 'none',
+            }}
           />
         </motion.div>
 
@@ -129,7 +130,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Social Icons */}
+      {/* Desktop Social Icons */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -140,30 +141,12 @@ export function Hero() {
         className="hidden md:flex absolute left-6 bottom-8 z-20 flex-col gap-3"
       >
         {[
-          {
-            icon: FaGithub,
-            url: 'https://github.com/',
-          },
-          {
-            icon: FaLinkedinIn,
-            url: 'https://www.linkedin.com/',
-          },
-          {
-            icon: FaTwitter,
-            url: 'https://x.com/',
-          },
-          {
-            icon: FaFacebookF,
-            url: 'https://www.facebook.com/',
-          },
-          {
-            icon: FaInstagram,
-            url: 'https://www.instagram.com/',
-          },
-          {
-            icon: FaSnapchatGhost,
-            url: 'https://www.snapchat.com/',
-          },
+          { icon: FaGithub, url: 'https://github.com/' },
+          { icon: FaLinkedinIn, url: 'https://www.linkedin.com/' },
+          { icon: FaTwitter, url: 'https://x.com/' },
+          { icon: FaFacebookF, url: 'https://www.facebook.com/' },
+          { icon: FaInstagram, url: 'https://www.instagram.com/' },
+          { icon: FaSnapchatGhost, url: 'https://www.snapchat.com/' },
         ].map(({ icon: Icon, url }, index) => (
           <a
             key={index}
@@ -188,7 +171,7 @@ export function Hero() {
         ))}
       </motion.div>
 
-      {/* Scroll Indicator */}
+      {/* Desktop Scroll */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -210,10 +193,7 @@ export function Hero() {
             ease: 'easeInOut',
           }}
         >
-          <ChevronDown
-            size={16}
-            className="text-[#F5F5F0]/40"
-          />
+          <ChevronDown size={16} className="text-[#F5F5F0]/40" />
         </motion.div>
       </motion.div>
 
@@ -229,18 +209,9 @@ export function Hero() {
       >
         <div className="flex items-center gap-3">
           {[
-            {
-              icon: FaGithub,
-              url: 'https://github.com/',
-            },
-            {
-              icon: FaLinkedinIn,
-              url: 'https://www.linkedin.com/',
-            },
-            {
-              icon: FaInstagram,
-              url: 'https://www.instagram.com/',
-            },
+            { icon: FaGithub, url: 'https://github.com/' },
+            { icon: FaLinkedinIn, url: 'https://www.linkedin.com/' },
+            { icon: FaInstagram, url: 'https://www.instagram.com/' },
           ].map(({ icon: Icon, url }, index) => (
             <a
               key={index}
@@ -277,10 +248,7 @@ export function Hero() {
               ease: 'easeInOut',
             }}
           >
-            <ChevronDown
-              size={15}
-              className="text-[#F5F5F0]/40"
-            />
+            <ChevronDown size={15} className="text-[#F5F5F0]/40" />
           </motion.div>
         </div>
       </motion.div>
