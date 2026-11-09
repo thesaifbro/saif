@@ -6,7 +6,7 @@ export function Experiments() {
     {
       title: "Noobhai Gaming",
       type: "ON FACEBOOK",
-      image: "https://files.catbox.moe/amvww2.jpg",
+      image: "https://i.ibb.co/Hf6Y4DFV/de9f658f-1584-40bf-a318-4f4fa4cd97fa.jpg",
       url: "https://www.facebook.com/Noobhaigaming",
       theme: {
         color: "#1877F2",
@@ -18,7 +18,7 @@ export function Experiments() {
        {
       title: "Noobhai Gaming",
       type: "ON YOUTUBE",
-      image: "https://files.catbox.moe/amvww2.jpg",
+      image: "https://i.ibb.co/Hf6Y4DFV/de9f658f-1584-40bf-a318-4f4fa4cd97fa.jpg",
       url: "https://www.youtube.com/@NoobhaiGamingBD",
       theme: {
         color: "#FF0000",
@@ -30,7 +30,7 @@ export function Experiments() {
     {
       title: "The Saif Bro",
       type: "ON FACEBOOK",
-      image: "https://files.catbox.moe/880e7t.jpg",
+      image: "https://i.ibb.co/vxNSC5BB/24c69cd8-0fb3-4ef0-a491-8183d3f307a4.jpg",
       url: "https://facebook.com/thesaifbrobd",
       theme: {
         color: "#1877F2",
