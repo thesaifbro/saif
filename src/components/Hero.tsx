@@ -75,7 +75,7 @@ export function Hero() {
           onMouseLeave={() => setCursorVariant('default')}
         >
           <img
-            src="https://files.catbox.moe/9c79u5.jpg"
+            src="https://i.ibb.co/8D71xt76/db0751da-3913-4511-9b29-c56704d95abc.jpg"
             alt="Saif"
             className="
               w-full
