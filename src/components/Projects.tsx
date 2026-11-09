@@ -19,7 +19,7 @@ const projects: Project[] = [
     description: "A digital marketplace for OTT subscriptions and gaming top-ups.",
     technologies: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Firebase"],
     liveUrl: "https://brosmart.shop/",
-    image: "https://files.catbox.moe/cu7ow0.jpg"
+    image: "https://i.ibb.co/MDdCcsW4/20f842e7-5603-4858-93dc-c95443384a98.jpg"
   },
   {
     id: "02",
@@ -29,7 +29,7 @@ const projects: Project[] = [
       "Jhakkas — A modern streetwear e-commerce website focused on bold fashion, smooth shopping experience, and premium UI/UX.",
     technologies: ["React", "Framer Motion", "Three.js", "Tailwind CSS"],
     liveUrl: "https://www.jhakkasbd.com/",
-    image: "https://files.catbox.moe/znxyzd.jpg"
+    image: "https://i.ibb.co/9m9mY7xw/a04d3f60-5913-4640-a495-3fe9627bc0d2.jpg"
   },
   {
     id: "03",
@@ -39,7 +39,7 @@ const projects: Project[] = [
       "BooksMart — A modern online bookstore designed for seamless book discovery, browsing, and shopping with a clean and user-friendly interface.",
     technologies: ["Next.js", "Stripe", "Prisma", "PostgreSQL"],
     liveUrl: "https://booksmartshopbd.vercel.app/",
-    image: "https://files.catbox.moe/q9c0p3.jpg"
+    image: "https://i.ibb.co/LzPPYwrr/2eea666d-8791-4c30-b06b-b5a535b5f54e.jpg"
   },
 ];
 
