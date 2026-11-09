@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export function Preloader() {
   const [loading, setLoading] = useState(true);
 
-  const logo = "https://files.catbox.moe/9c79u5.jpg";
+  const logo = "https://i.ibb.co/8D71xt76/db0751da-3913-4511-9b29-c56704d95abc.jpg";
 
   useEffect(() => {
     const timer = setTimeout(() => {
