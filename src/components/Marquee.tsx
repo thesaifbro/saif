@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export function Marquee() {
-  const text = "S.M. SAMY AL HASAN SAIF  •  CSE STUDENT • FULL-STACK DEVELOPER • TEAM LEADERSHIP  • PROJECT LEADERSHIP •CREATIVE TECHNOLOGIST • ";
+  const text = "S.M. SAMY AL HASAN SAIF  •  CSE STUDENT • FULL-STACK DEVELOPER • TEAM LEADERSHIP  • PROJECT LEADERSHIP •CREATIVE TECHNOLOGIST • VIBE CODER  • ";
   const repeatedText = text.repeat(3);
 
   return (
