@@ -42,7 +42,7 @@ export function Journey() {
       subtitle: "Computer Science & Engineering",
       institution: "Bangladesh University of Business and Technology (BUBT)",
       location: "Dhaka, Bangladesh",
-      logo: "https://i.ibb.co/XZcqnJSj/73cf8439-5ea0-4eca-a58e-6ae7526ac545.jpg",
+      logo: "https://i.ibb.co/8LFwyrcY/f6357753-84d3-4e68-a89b-0dba93ab21a2.jpg",
       align: "left",
       active: true,
     },
